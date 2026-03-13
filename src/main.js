@@ -53,8 +53,6 @@ function initHeaderEffects() {
         return;
     }
 
-    let lastScrollY = window.scrollY;
-
     window.addEventListener('scroll', () => {
         const currentScrollY = window.scrollY;
 
@@ -63,14 +61,6 @@ function initHeaderEffects() {
         } else {
             header.classList.remove('scrolled');
         }
-
-        if (currentScrollY > lastScrollY && currentScrollY > 100) {
-            header.style.transform = 'translateY(-100%)';
-        } else {
-            header.style.transform = 'translateY(0)';
-        }
-
-        lastScrollY = currentScrollY;
     });
 }
 
