@@ -5,8 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Arca de Noé Clínica Veterinária e Pet Shop. Atendimento veterinário, banho, cirurgias, medicamentos, rações, petiscos e acessórios em Redenção - PA."
+      content="Arca de Noé Clínica Veterinária e Pet Shop. Atendimento veterinário 24h, banho, cirurgias, medicamentos, rações, petiscos e acessórios em Redenção - PA. Agende já!"
     />
+    <meta name="keywords" content="clínica veterinária, pet shop, veterinário 24h, Redenção PA, banho em pets, cirurgia veterinária, rações, medicamentos para pets" />
+    <meta name="author" content="Arca de Noé Clínica Veterinária" />
+    <meta property="og:title" content="Arca de Noé | Clínica Veterinária e Pet Shop" />
+    <meta property="og:description" content="Atendimento veterinário completo 24h em Redenção - PA. Banho, cirurgias, medicamentos e produtos para seu pet." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
     <title>Arca de Noé | Clínica Veterinária e Pet Shop</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -15,30 +21,32 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./src/styles.css" />
+    <script src="./src/main.js" defer></script>
   </head>
   <body>
+    <a href="#inicio" class="skip-link">Pular para o conteúdo principal</a>
     <div class="site-shell">
       <header class="header">
         <div class="container nav">
           <a class="brand" href="#inicio">
-            <img src="./src/assets/logo-arca-noe.jpg" alt="Logomarca Arca de Noé Clínica Veterinária" />
+            <img src="./src/assets/logo-arca-noe.jpg" alt="Logomarca Arca de Noé Clínica Veterinária" loading="eager" />
             <div>
               <strong>Arca de Noé</strong>
               <span>Clínica Veterinária &amp; Pet Shop</span>
             </div>
           </a>
 
-          <nav class="nav-links">
-            <a href="#servicos">Serviços</a>
-            <a href="#horarios">Horários</a>
-            <a href="#contato">Contato</a>
+          <nav class="nav-links" role="navigation" aria-label="Menu principal">
+            <a href="#servicos" aria-label="Ir para seção de serviços">Serviços</a>
+            <a href="#horarios" aria-label="Ir para seção de horários">Horários</a>
+            <a href="#contato" aria-label="Ir para seção de contato">Contato</a>
           </nav>
 
           <div class="nav-actions">
-            <a class="btn btn-secondary" href="https://www.instagram.com/vet_arcanoe?igsh=Z2g4Ym12djIyY3J4" target="_blank" rel="noreferrer">
+            <a class="btn btn-secondary" href="https://www.instagram.com/vet_arcanoe?igsh=Z2g4Ym12djIyY3J4" target="_blank" rel="noreferrer" aria-label="Siga-nos no Instagram">
               Instagram
             </a>
-            <a class="btn btn-primary" href="https://wa.me/5594991045854" target="_blank" rel="noreferrer">
+            <a class="btn btn-primary" href="https://wa.me/5594991045854" target="_blank" rel="noreferrer" aria-label="Fale conosco pelo WhatsApp">
               WhatsApp
             </a>
           </div>
@@ -48,7 +56,7 @@
       <main>
         <section class="hero" id="inicio">
           <div class="container hero-grid">
-            <div class="hero-copy">
+            <div class="hero-copy animate-slide-in-left">
               <span class="eyebrow">Cuidado completo para cães e gatos</span>
               <h1>Tudo para o seu pet, com carinho, estrutura e atendimento rápido.</h1>
               <p>
@@ -63,10 +71,10 @@
               </div>
 
               <div class="hero-actions">
-                <a class="btn btn-primary" href="https://wa.me/5594991045854" target="_blank" rel="noreferrer">
+                <a class="btn btn-primary" href="https://wa.me/5594991045854" target="_blank" rel="noreferrer" aria-label="Agendar consulta pelo WhatsApp">
                   Agendar no WhatsApp
                 </a>
-                <a class="btn btn-secondary" href="https://www.instagram.com/vet_arcanoe?igsh=Z2g4Ym12djIyY3J4" target="_blank" rel="noreferrer">
+                <a class="btn btn-secondary" href="https://www.instagram.com/vet_arcanoe?igsh=Z2g4Ym12djIyY3J4" target="_blank" rel="noreferrer" aria-label="Ver nosso Instagram">
                   Ver Instagram
                 </a>
               </div>
@@ -83,12 +91,12 @@
               </div>
             </div>
 
-            <div class="hero-media">
+            <div class="hero-media animate-slide-in-right">
               <div class="hero-card main-card">
-                <img src="./src/assets/pets-services.jpg" alt="Cachorro e gato em arte da Arca de Noé" />
+                <img src="./src/assets/pets-services.jpg" alt="Cachorro e gato em arte da Arca de Noé - Serviços veterinários completos" loading="lazy" />
               </div>
               <div class="hero-card floating-card">
-                <img src="./src/assets/pets-hours.jpg" alt="Arte com horários da Arca de Noé" />
+                <img src="./src/assets/pets-hours.jpg" alt="Arte com horários de funcionamento da Arca de Noé - Atendimento 24h" loading="lazy" />
               </div>
             </div>
           </div>
@@ -97,45 +105,45 @@
         <section class="section" id="servicos">
           <div class="container section-grid">
             <div>
-              <span class="section-tag">Serviços</span>
-              <h2>Do check-up à rotina de cuidados: o combo completo do mundo pet.</h2>
+              <span class="section-tag scroll-reveal">Serviços</span>
+              <h2 class="scroll-reveal">Do check-up à rotina de cuidados: o combo completo do mundo pet.</h2>
             </div>
 
             <div class="services-grid">
-              <article class="service-card">
-                <span class="service-icon">+</span>
+              <article class="service-card" role="article">
+                <div class="service-icon" aria-hidden="true">🍖</div>
                 <h3>Rações em geral</h3>
-                <p>Atendimento com foco em praticidade, cuidado e bem-estar do seu pet.</p>
+                <p>Rações premium e especiais para todas as idades e portes de cães e gatos.</p>
               </article>
-              <article class="service-card">
-                <span class="service-icon">+</span>
+              <article class="service-card" role="article">
+                <div class="service-icon" aria-hidden="true">🦴</div>
                 <h3>Petiscos e brinquedos</h3>
-                <p>Atendimento com foco em praticidade, cuidado e bem-estar do seu pet.</p>
+                <p>Petiscos naturais, brinquedos interativos e enriquecimento ambiental.</p>
               </article>
-              <article class="service-card">
-                <span class="service-icon">+</span>
+              <article class="service-card" role="article">
+                <div class="service-icon" aria-hidden="true">🏠</div>
                 <h3>Caminhas e casinhas</h3>
-                <p>Atendimento com foco em praticidade, cuidado e bem-estar do seu pet.</p>
+                <p>Conforto e segurança com caminhas ortopédicas e casinhas térmicas.</p>
               </article>
-              <article class="service-card">
-                <span class="service-icon">+</span>
+              <article class="service-card" role="article">
+                <div class="service-icon" aria-hidden="true">💊</div>
                 <h3>Medicamentos</h3>
-                <p>Atendimento com foco em praticidade, cuidado e bem-estar do seu pet.</p>
+                <p>Farmácia veterinária completa com medicamentos e vitaminas.</p>
               </article>
-              <article class="service-card">
-                <span class="service-icon">+</span>
-                <h3>Banho</h3>
-                <p>Atendimento com foco em praticidade, cuidado e bem-estar do seu pet.</p>
+              <article class="service-card" role="article">
+                <div class="service-icon" aria-hidden="true">🚿</div>
+                <h3>Banho e tosa</h3>
+                <p>Banho terapêutico, tosa higiênica e estética com produtos premium.</p>
               </article>
-              <article class="service-card">
-                <span class="service-icon">+</span>
+              <article class="service-card" role="article">
+                <div class="service-icon" aria-hidden="true">🩺</div>
                 <h3>Atendimento veterinário</h3>
-                <p>Atendimento com foco em praticidade, cuidado e bem-estar do seu pet.</p>
+                <p>Consultas, exames, vacinação e prevenção com especialistas.</p>
               </article>
-              <article class="service-card">
-                <span class="service-icon">+</span>
+              <article class="service-card" role="article">
+                <div class="service-icon" aria-hidden="true">⚕️</div>
                 <h3>Cirurgias</h3>
-                <p>Atendimento com foco em praticidade, cuidado e bem-estar do seu pet.</p>
+                <p>Cirurgias eletivas e emergenciais com anestesia segura.</p>
               </article>
             </div>
           </div>
@@ -144,8 +152,8 @@
         <section class="section section-soft" id="horarios">
           <div class="container hours-layout">
             <div class="hours-copy">
-              <span class="section-tag">Horários</span>
-              <h2>Aberto para rotina, prevenção e também para as urgências da vida real.</h2>
+              <span class="section-tag scroll-reveal">Horários</span>
+              <h2 class="scroll-reveal">Aberto para rotina, prevenção e também para as urgências da vida real.</h2>
               <p class="section-text">
                 Porque cachorro e gato não leem agenda. Quando o caos resolve aparecer, a clínica conta com
                 atendimento emergencial 24 horas.
@@ -176,8 +184,8 @@
               </div>
             </div>
 
-            <div class="hours-image-card">
-              <img src="./src/assets/pets-hours.jpg" alt="Gato e cachorro com destaque para horários" />
+            <div class="hours-image-card scroll-reveal-right">
+              <img src="./src/assets/pets-hours.jpg" alt="Gato e cachorro com destaque para horários de atendimento - Arca de Noé 24h" loading="lazy" />
             </div>
           </div>
         </section>
@@ -185,18 +193,18 @@
         <section class="section" id="contato">
           <div class="container cta-box">
             <div>
-              <span class="section-tag">Contato rápido</span>
-              <h2>Fale com a Arca de Noé pelos canais que realmente importam.</h2>
+              <span class="section-tag scroll-reveal">Contato rápido</span>
+              <h2 class="scroll-reveal">Fale com a Arca de Noé pelos canais que realmente importam.</h2>
               <p class="section-text">
                 Direcionamento direto para o Instagram e para o WhatsApp, sem labirinto digital e sem botão decorativo inútil.
               </p>
             </div>
 
             <div class="cta-actions">
-              <a class="btn btn-primary btn-large" href="https://wa.me/5594991045854" target="_blank" rel="noreferrer">
+              <a class="btn btn-primary btn-large" href="https://wa.me/5594991045854" target="_blank" rel="noreferrer" aria-label="Chamar no WhatsApp para contato rápido">
                 Chamar no WhatsApp
               </a>
-              <a class="btn btn-secondary btn-large" href="https://www.instagram.com/vet_arcanoe?igsh=Z2g4Ym12djIyY3J4" target="_blank" rel="noreferrer">
+              <a class="btn btn-secondary btn-large" href="https://www.instagram.com/vet_arcanoe?igsh=Z2g4Ym12djIyY3J4" target="_blank" rel="noreferrer" aria-label="Acessar Instagram da Arca de Noé">
                 Acessar Instagram
               </a>
             </div>
