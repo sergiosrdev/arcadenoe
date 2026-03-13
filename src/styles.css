@@ -448,6 +448,7 @@
   --dark: #143827;
   --shadow: 0 25px 60px rgba(5, 22, 14, 0.28);
   --radius: 24px;
+  --mobile-header-offset: 96px;
 }
 
 * {
@@ -1124,6 +1125,18 @@ img {
 }
 
 @media (max-width: 980px) {
+  .site-shell {
+    padding-top: var(--mobile-header-offset);
+  }
+
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+  }
+
   .nav {
     position: relative;
     flex-wrap: nowrap;
@@ -1218,6 +1231,10 @@ img {
 }
 
 @media (max-width: 720px) {
+  .site-shell {
+    padding-top: 90px;
+  }
+
   .hero {
     padding-top: 40px;
   }
