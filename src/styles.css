@@ -745,6 +745,15 @@ img {
   fill: currentColor;
 }
 
+.btn-primary .whatsapp-icon {
+  width: 28px;
+  height: 28px;
+  border-radius: 999px;
+  background: rgba(16, 51, 31, 0.14);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.22);
+  padding: 5px;
+}
+
 .btn-instagram {
   color: #fff7fb;
   border-color: rgba(255, 255, 255, 0.18);
